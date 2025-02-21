@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Cor RGB e CMYK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Modelos RGB e CMYK</h1>
+    </header>
+    <main>
+        <section id="rgb">
+            <h2>RGB: O Modelo de Cor Aditivo</h2>
+            <p>RGB (Vermelho, Verde, Azul) é um modelo de cor aditivo usado em displays digitais, como monitores de computador, smartphones e TVs. Neste modelo, as cores são criadas combinando diferentes intensidades de luz vermelha, verde e azul.</p>
+            <p>Pontos-chave sobre RGB:</p>
+            <ul>
+                <li>Os pixels combinam luz vermelha, verde e azul para criar várias cores.</li>
+                <li>A intensidade de cada cor varia de 0 (desligado) a 255 (intensidade total).</li>
+                <li>Quando as três cores estão na intensidade máxima (255, 255, 255), vemos branco.</li>
+                <li>Quando as três cores estão desligadas (0, 0, 0), vemos preto.</li>
+            </ul>
+            <img src="rgb-circle.png" alt="Círculo de Cores RGB" class="color-circle">
+        </section>
+
+        <section id="pixels">
+            <h2>Como os Pixels Funcionam</h2>
+            <p>Cada pixel em uma tela digital é composto por três subpixels: um vermelho, um verde e um azul. A intensidade de cada subpixel determina a cor final exibida:</p>
+            <ul>
+                <li>Os subpixels podem ter vários níveis de brilho (0-255).</li>
+                <li>A combinação dessas intensidades de subpixels cria a cor percebida.</li>
+                <li>Por exemplo, vermelho total (255) e verde total (255) sem azul (0) cria amarelo.</li>
+            </ul>
+            <img src="pixel-structure.png" alt="Estrutura do Pixel" class="pixel-image">
+        </section>
+
+        <section id="cmyk">
+            <h2>CMYK: O Modelo de Cor Subtrativo</h2>
+            <p>CMYK (Ciano, Magenta, Amarelo, Preto) é um modelo de cor subtrativo usado na impressão. Ao contrário do RGB, que adiciona luz para criar cores, o CMYK funciona subtraindo luz através do uso de pigmentos de tinta.</p>
+            <p>Pontos-chave sobre CMYK:</p>
+            <ul>
+                <li>Ciano, Magenta e Amarelo são as cores primárias na impressão.</li>
+                <li>O "K" (Key) representa a tinta preta, que é adicionada para melhor contraste e para economizar tinta colorida.</li>
+                <li>As cores são criadas misturando diferentes porcentagens dessas quatro tintas.</li>
+                <li>O branco é a ausência de tinta (a cor do papel), enquanto o preto é uma combinação de todas as tintas.</li>
+            </ul>
+            <img src="cmyk-circle.png" alt="Círculo de Cores CMYK" class="color-circle">
+        </section>
+
+        <section id="comparison">
+            <h2>Comparando RGB e CMYK</h2>
+            <p>Embora RGB e CMYK sejam modelos de cor, eles servem a propósitos diferentes e funcionam de maneiras fundamentalmente distintas:</p>
+            <table>
+                <tr>
+                    <th>RGB (Aditivo)</th>
+                    <th>CMYK (Subtrativo)</th>
+                </tr>
+                <tr>
+                    <td>Usado em displays digitais</td>
+                    <td>Usado na impressão</td>
+                </tr>
+                <tr>
+                    <td>Adiciona luz para criar cores</td>
+                    <td>Subtrai luz usando pigmentos de tinta</td>
+                </tr>
+                <tr>
+                    <td>Preto é ausência de luz</td>
+                    <td>Preto é presença de todas as tintas</td>
+                </tr>
+                <tr>
+                    <td>Branco é todas as cores na intensidade máxima</td>
+                    <td>Branco é ausência de tinta (cor do papel)</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Criado para fins educacionais para explicar os modelos de cor RGB e CMYK.</p>
+    </footer>
+</body>
+</html>
+
