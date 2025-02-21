@@ -6,12 +6,12 @@
     <title>Modelos de Cor RGB e CMYK</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body style="background-color: #f0f0f0;">
     <header>
         <h1>Modelos RGB e CMYK</h1>
     </header>
     <main>
-        <section id="rgb">
+        <section id="rgb" style="background-color: white; border-radius: 1rem; padding: 1rem;">
             <h2>RGB: O Modelo de Cor Aditivo</h2>
             <p>RGB (Vermelho, Verde, Azul) é um modelo de cor aditivo usado em displays digitais, como monitores de computador, smartphones e TVs. Neste modelo, as cores são criadas combinando diferentes intensidades de luz vermelha, verde e azul.</p>
             <p>Pontos-chave sobre RGB:</p>
@@ -21,40 +21,41 @@
                 <li>Quando as três cores estão na intensidade máxima (255, 255, 255), vemos branco.</li>
                 <li>Quando as três cores estão desligadas (0, 0, 0), vemos preto.</li>
             </ul>
-            <img src="rgb-circle.png" alt="Círculo de Cores RGB" class="color-circle">
+            <img src="RGB.jpg" alt="Círculo de Cores RGB" class="color-circle">
         </section>
 
-        <section id="pixels">
-            <h2>Como os Pixels Funcionam</h2>
-            <p>Cada pixel em uma tela digital é composto por três subpixels: um vermelho, um verde e um azul. A intensidade de cada subpixel determina a cor final exibida:</p>
+        <section id="pixels" style="background-color: white; border-radius: 1rem; padding: 1rem;">
+            <h2>O funcionamento dos pixels </h2>
+            <p>Cada pixel em uma tela digital é composto por três subpixels: um vermelho, um verde e outro azul. A intensidade de cada subpixel determina a cor exibida:</p>
             <ul>
                 <li>Os subpixels podem ter vários níveis de brilho (0-255).</li>
-                <li>A combinação dessas intensidades de subpixels cria a cor percebida.</li>
-                <li>Por exemplo, vermelho total (255) e verde total (255) sem azul (0) cria amarelo.</li>
+                <li>A combinação dessas intensidades de subpixels cria a cor final</li>
+                <li>Um exemplo é o vermelho (255) e verde (255) sem azul (0) cria amarelo</li>
             </ul>
-            <img src="pixel-structure.png" alt="Estrutura do Pixel" class="pixel-image">
+            <img src="pixel-structure.jpeg" alt="Estrutura do Pixel" class="pixel-image">
         </section>
 
-        <section id="cmyk">
+        <section id="cmyk" style="background-color: white; border-radius: 1rem; padding: 1rem;">
             <h2>CMYK: O Modelo de Cor Subtrativo</h2>
-            <p>CMYK (Ciano, Magenta, Amarelo, Preto) é um modelo de cor subtrativo usado na impressão. Ao contrário do RGB, que adiciona luz para criar cores, o CMYK funciona subtraindo luz através do uso de pigmentos de tinta.</p>
+            <p>CMYK (Cyan, Magenta, Yellow, Black) é um modelo de cor subtrativo usado na impressão. Ao contrário do RGB, que adiciona luz para criar cores, o CMYK funciona subtraindo luz através do uso de pigmentos de tinta.</p>
             <p>Pontos-chave sobre CMYK:</p>
             <ul>
-                <li>Ciano, Magenta e Amarelo são as cores primárias na impressão.</li>
-                <li>O "K" (Key) representa a tinta preta, que é adicionada para melhor contraste e para economizar tinta colorida.</li>
+                <li>Cyan, Magenta e Yellow são as cores primárias na impressão.</li>
+                <li>O "K" (Preto) representa a tinta preta, que é adicionada para melhor contraste e para economizar tinta colorida.</li>
                 <li>As cores são criadas misturando diferentes porcentagens dessas quatro tintas.</li>
                 <li>O branco é a ausência de tinta (a cor do papel), enquanto o preto é uma combinação de todas as tintas.</li>
             </ul>
-            <img src="cmyk-circle.png" alt="Círculo de Cores CMYK" class="color-circle">
+            <img src="CMYK.webp" alt="Círculo de Cores CMYK" class="color-circle">
         </section>
 
-        <section id="comparison">
+        <section id="comparison" style="background-color: white; border-radius: 1rem; padding: 1rem;">
             <h2>Comparando RGB e CMYK</h2>
             <p>Embora RGB e CMYK sejam modelos de cor, eles servem a propósitos diferentes e funcionam de maneiras fundamentalmente distintas:</p>
             <table>
+
                 <tr>
-                    <th>RGB (Aditivo)</th>
-                    <th>CMYK (Subtrativo)</th>
+                    <th>RGB</th>
+                    <th>CMYK</th>
                 </tr>
                 <tr>
                     <td>Usado em displays digitais</td>
@@ -75,9 +76,5 @@
             </table>
         </section>
     </main>
-    <footer>
-        <p>Criado para fins educacionais para explicar os modelos de cor RGB e CMYK.</p>
-    </footer>
 </body>
 </html>
-
